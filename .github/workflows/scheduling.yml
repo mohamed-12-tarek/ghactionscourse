@@ -1,0 +1,13 @@
+name: Scheduling Workflow
+
+on:
+  schedule:
+    - cron: "30 2 * * 2"
+
+jobs:
+  schedule:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: proof of Running
+        run: echo "Done Execusion on time"
